@@ -1,0 +1,38 @@
+# Data
+data_dir: data
+img_size: 224
+num_workers: 4
+
+# Model
+backbone: efficientnet_b0
+pretrained: true
+fusion: concat
+dropout: 0.4
+
+# Training
+seed: 42
+epochs: 30
+batch_size: 32
+lr: 0.0001
+weight_decay: 0.01
+warmup_epochs: 2
+warmup_start_factor: 0.1
+early_stop_patience: 7
+grad_clip: 1.0
+label_smoothing: 0.1
+
+# EMA
+use_ema: false
+ema_decay: 0.9998
+
+# CV
+n_folds: 5
+fold: all
+
+# Output
+output_root: outputs
+
+# W&B
+wandb_project: dacon-structural
+wandb_run_name: effnet_b0_224_5fold
+wandb_mode: offline    # offline: local save without login, online: live dashboard, disabled: off
