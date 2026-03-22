@@ -1,0 +1,41 @@
+# Data
+data/
+
+# Reference materials (not tracked)
+refs/
+
+# Outputs
+outputs/**/*.pt
+outputs/**/*.pth
+outputs/**/*.ckpt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Wandb
+wandb/
